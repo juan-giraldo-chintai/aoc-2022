@@ -1,7 +1,7 @@
-import {readInput} from "./read-input";
+import {readInput} from "../read-input";
 
 export default function calories() {
-  const input: string[] = readInput().split("\n");
+  const input: string[] = readInput(`${__dirname}/input.txt`).split("\n");
   let highestCaloricCount = 0;
   let currentCaloricCount = 0;
   for(let line of input) {

@@ -1,9 +1,7 @@
-import {readInput} from "./read-input";
-
-
+import {readInput} from "../read-input";
 
 export default function top3CaloricCount() {
-  const input: string[] = readInput().split("\n");
+  const input: string[] = readInput(`${__dirname}/input.txt`).split("\n");
   const allCaloricCount = []
   let currentCaloricCount = 0;
   for(let line of input) {
