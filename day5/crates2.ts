@@ -31,7 +31,6 @@ export default function crates() {
   for(i; i < lines.length; i ++) {
     const action = lines[i].match(/(\d)+/g);
     const [amountToMove, from, to] = action.map(item => parseInt(item));
-    console.log(amountToMove, from, to, crateStacks);
     const fromStack = crateStacks[from -1];
     const toStack = crateStacks[to -1];
     const start = fromStack.length - amountToMove;
