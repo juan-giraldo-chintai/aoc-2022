@@ -28,7 +28,6 @@ export default function signal(size: number) {
     } else {
       const prevLetter = message[i - 1];
       const newLetter = message[i + size -1];
-      console.log(prevLetter, newLetter)
       removeLetterFromMap(prevLetter, signalMap);
       addLetterToMap(newLetter, signalMap);
     }
